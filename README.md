@@ -46,6 +46,10 @@ Only accessible after successful sign-up.
 
 Requires the same credentials used during sign-up.
 
+# Sign In With google Auth
+
+implemented google singup and sign in with firebase auth.
+
  # Forgot Password
 
 Sign up first to test this feature.
