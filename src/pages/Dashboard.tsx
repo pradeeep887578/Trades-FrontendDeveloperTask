@@ -97,7 +97,7 @@ const Dashboard: React.FC = () => {
 
   const handleConnectWallet = async () => {
     if (typeof window.ethereum === 'undefined') {
-      window.location.href = 'https://metamask.io/';
+      window.open('https://metamask.io/', '_blank');
       return;
     }
     try {
