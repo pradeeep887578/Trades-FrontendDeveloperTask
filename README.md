@@ -12,7 +12,7 @@ Installs all the dependencies required for the project as specified in the packa
 
 Copy the env.sample file and rename it to .env to set up environment variables required for the project.
 
-### npm start
+### npm run dev
 
 Runs the app in the development mode.\
 Open [http://localhost:5173] to view it in your browser.
