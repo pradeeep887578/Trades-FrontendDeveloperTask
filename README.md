@@ -15,7 +15,7 @@ Copy the env.sample file and rename it to .env to set up environment variables r
 ### npm start
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:5173] to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
@@ -61,7 +61,7 @@ You must use the same password you signed up with.
 
 The password is stored temporarily in localStorage for simulation.
 
-## Web3 Integration
+# Web3 Integration
 # Wallet Connection
 
 After sign-in, users can connect their MetaMask wallet.
@@ -75,7 +75,7 @@ State Management
 
 Used Redux to manage wallet connection state.
 
-## Smart Contract Features
+# Smart Contract Features
 Counter Smart Contract Integration
 
 ABI integrated for a sample counter contract.
