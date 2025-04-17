@@ -96,11 +96,20 @@ const Dashboard: React.FC = () => {
   };
 
   const handleConnectWallet = async () => {
-    const provider = new ethers.BrowserProvider(window.ethereum);
-    const accounts = await provider.send("eth_requestAccounts", []);
-    const net = await provider.getNetwork();
-    dispatch(connectWallet({ address: accounts[0], network: net.name }));
+    if (typeof window.ethereum === 'undefined') {
+      window.location.href = 'https://metamask.io/';
+      return;
+    }
+    try {
+      const provider = new ethers.BrowserProvider(window.ethereum);
+      const accounts = await provider.send("eth_requestAccounts", []);
+      const net = await provider.getNetwork();
+      dispatch(connectWallet({ address: accounts[0], network: net.name }));
+    } catch (error) {
+      console.error("Error connecting wallet:", error);
+    }
   };
+  
 
   const handleDisconnectWallet = () => {
     dispatch(disconnectWallet());
