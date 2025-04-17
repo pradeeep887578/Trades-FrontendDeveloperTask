@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Authentication + Web3 Auth + Counter Dapp
+This project is built using Vite, React, and TypeScript, and integrates Web3 features along with a basic authentication flow.
 
 ## Available Scripts
 
